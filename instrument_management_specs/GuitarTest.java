@@ -8,12 +8,17 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar();
+    guitar = new Guitar("Fender");
   }
 
   @Test
   public void testPlayGuitar() {
     assertEquals("Riff City", guitar.playInstrument());
+  }
+
+  @Test 
+  public void getBrand(){
+    assertEquals("Fender", guitar.getBrand());
   }
 
 }

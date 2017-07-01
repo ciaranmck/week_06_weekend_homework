@@ -8,12 +8,17 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano();
+    piano = new Piano("Yamaha");
   }
 
   @Test
   public void testPlayPiano() {
     assertEquals("Plink Plonk", piano.playInstrument());
+  }
+
+  @Test 
+  public void getBrand(){
+    assertEquals("Yamaha", piano.getBrand());
   }
 
 }

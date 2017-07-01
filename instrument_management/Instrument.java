@@ -1,17 +1,15 @@
-// package instrument_management;
+package instrument_management;
 
-// public abstract class Instrument {
+public abstract class Instrument {
 
-//   String play;
+  String brand;
 
-//   public Instrument(String play) {
-//     this.play = play;
-//   }
+  public Instrument(String brand) {
+    this.brand = brand;
+  }
 
-//   public String playInstrument() {
-//     return this.play;
+  public String getBrand() {
+    return this.brand;
+  }
 
-
-//   }
-
-// }
+}

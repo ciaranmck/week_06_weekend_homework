@@ -1,11 +1,12 @@
 package instrument_management;
 import behaviours.*;
 
-public class Guitar implements Playable {
+public class Guitar extends Instrument implements Playable {
 
   String play;
 
-  public Guitar() {
+  public Guitar(String brand) {
+    super(brand);
     this.play = play;
   }
 

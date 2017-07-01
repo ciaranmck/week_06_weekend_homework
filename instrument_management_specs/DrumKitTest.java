@@ -8,12 +8,17 @@ public class DrumKitTest {
 
   @Before
   public void before() {
-    drumkit = new DrumKit();
+    drumkit = new DrumKit("Pearl");
   }
 
   @Test
   public void testPlayDrums() {
     assertEquals("Ba Dum Dish", drumkit.playInstrument());
+  }
+
+  @Test 
+  public void getBrand(){
+    assertEquals("Pearl", drumkit.getBrand());
   }
 
 }
