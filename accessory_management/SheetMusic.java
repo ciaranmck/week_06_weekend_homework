@@ -6,17 +6,19 @@ public class SheetMusic implements Sellable  {
   double buyingPrice;
   double sellingPrice;
 
-  public SheetMusic(double buyingPrice, double sellingPrice) {
+  public SheetMusic() {
     this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
   } 
 
   public double getBuyPrice() {
-    return this.buyingPrice;
-  }
+      this.buyingPrice = 8;
+      return this.buyingPrice;
+    }
 
-  public double getSellPrice() {
-    return this.sellingPrice;
-  }
+    public double getSellPrice() {
+      this.sellingPrice = 13;
+      return this.sellingPrice;
+    }
 
 }

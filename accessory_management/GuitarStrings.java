@@ -6,17 +6,19 @@ public class GuitarStrings implements Sellable  {
   double buyingPrice;
   double sellingPrice;
 
-  public GuitarStrings(double buyingPrice, double sellingPrice) {
+  public GuitarStrings() {
     this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
   } 
 
   public double getBuyPrice() {
-    return this.buyingPrice;
-  }
+      this.buyingPrice = 7;
+      return this.buyingPrice;
+    }
 
-  public double getSellPrice() {
-    return this.sellingPrice;
-  }
+    public double getSellPrice() {
+      this.sellingPrice = 12;
+      return this.sellingPrice;
+    }
 
 }
