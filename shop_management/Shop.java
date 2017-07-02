@@ -1,6 +1,7 @@
 package shop_management;
 import behaviours.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Shop {
 
@@ -17,6 +18,18 @@ public class Shop {
 
   public String getName() {
     return this.name;
+  }
+
+  public void addStock(Sellable stock) {
+  this.inventory.add(stock);
+}
+
+  public void removeStock(Sellable stock) {
+  this.inventory.remove(stock);
+}
+
+  public int stockCount() {
+    return this.inventory.size();
   }
 
 
