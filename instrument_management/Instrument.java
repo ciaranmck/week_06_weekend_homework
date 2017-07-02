@@ -25,6 +25,8 @@ public abstract class Instrument {
     return markup;
   }
 
+  // sellingPrice needs to refactored
+
   public double sellingPrice(double markupPercentage) { double cost = this.buyingPrice;
     double markup = (cost / 100) * markupPercentage;
     double sellPrice = markup + this.buyingPrice;

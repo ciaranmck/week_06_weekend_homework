@@ -1,7 +1,7 @@
 package instrument_management;
 import behaviours.*;
 
-public class Piano extends Instrument implements Playable, Sellable {
+public class Piano extends Instrument implements Playable {
 
   String play;
   double buyingPrice;
