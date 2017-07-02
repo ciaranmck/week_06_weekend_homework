@@ -1,12 +1,13 @@
 package instrument_management;
 import behaviours.*;
 
-public class DrumKit extends Instrument implements Playable {
+public class DrumKit extends Instrument implements Playable, Sellable  {
 
   String play;
+  double buyingPrice;
 
-  public DrumKit(String brand) {
-    super(brand);
+  public DrumKit(String brand, double buyingPrice) {
+    super(brand, buyingPrice);
     this.play = play;
   }
 

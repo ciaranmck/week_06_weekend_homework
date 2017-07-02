@@ -8,7 +8,7 @@ public class DrumKitTest {
 
   @Before
   public void before() {
-    drumkit = new DrumKit("Pearl");
+    drumkit = new DrumKit("Pearl", 999.99);
   }
 
   @Test
@@ -19,6 +19,21 @@ public class DrumKitTest {
   @Test 
   public void getBrand(){
     assertEquals("Pearl", drumkit.getBrand());
+  }
+
+  @Test
+  public void getMarkup(){
+    assertEquals(249.99, drumkit.calculateMarkup(25), .01);
+  }
+
+  @Test 
+  public void getBuyingPrice() {
+    assertEquals(999.99, drumkit.getBuyingPrice(), .01);
+  }
+
+  @Test
+  public void getSellingPrice() {
+    assertEquals(1249.98, drumkit.sellingPrice(25), .01);
   }
 
 }
