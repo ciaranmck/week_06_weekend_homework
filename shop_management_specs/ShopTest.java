@@ -7,12 +7,12 @@ import shop_management.*;
 public class ShopTest {
 
   Shop shop;
-  // Sellable stock;
+  Sellable items;  
 
   @Before
   public void before() {
     shop = new Shop("Rays Music Exchange");
-    // stock = new GuitarStrings();
+    // items = new GuitarStrings();
   }
 
   @Test

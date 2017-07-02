@@ -1,17 +1,18 @@
 package shop_management;
 import behaviours.*;
-// import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class Shop {
 
   String name;
+  ArrayList<Sellable> inventory = new ArrayList<Sellable>();
   Sellable stock;
-  // Arraylist inventory;
+  
 
   public Shop(String name) {
     this.name = name;
+    this.inventory = inventory;
     this.stock = stock;
-    // this.inventory = inventory;
   }
 
   public String getName() {
